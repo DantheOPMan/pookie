@@ -5,7 +5,7 @@ import TelegramIcon from '@mui/icons-material/Telegram'; // Import Telegram icon
 
 const Footer = () => {
     return (
-        <Box component="footer" sx={{ color: 'white', py: 3, textAlign: 'center' }}>
+        <Box component="footer" sx={{ color: 'white', py: 3, textAlign: 'center', backgroundColor: '#F5A190' }}>
             <Container maxWidth="lg" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
                 {/* Brand disclaimer */}
                 <Typography variant="caption" sx={{ mb: 2 }}>

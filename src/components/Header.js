@@ -25,7 +25,7 @@ const Header = () => {
                         <TelegramIcon />
                     </a>
                     <WalletMultiButton style={{
-                        backgroundColor: 'deeppink', // Your button's background color
+                        backgroundColor: '#FFDAB9', // Your button's background color
                         hoverColor: 'gray',
                         color: 'white', // Your button's text color
                         fontWeight: 'bold', // Your button's font weight

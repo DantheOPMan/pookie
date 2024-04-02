@@ -17,13 +17,20 @@ const HowToBuy = () => {
     };
 
     return (
-        <section id="how-to-buy" className="text-white body-font">
-            <div className="container mx-auto flex px-5 py-10 justify-center flex-col">
+        <section id="how-to-buy" className="text-white body-font" style={{ backgroundColor: '#F5A190' }}>
+            <div className="container mx-auto flex px-5 py-10 justify-center flex-col" >
                 <Grid container spacing={2} alignItems="center" justifyContent="center" style={{ minHeight: '25vh' }}>
-                    <Grid item xs={12}>
+                    <div className="text-center lg:w-2/3 w-full" style={{ 
+                        backgroundColor: 'rgba(128, 128, 128, 0.5)', 
+                        padding: '20px', // Reduced padding
+                        borderRadius: '20px',
+                        maxWidth: 'fit', // Adjust this value as needed to fit your content more snugly
+                        margin: '0 auto', // This centers the div if it's narrower than its parent
+                    }}>                    
+                    <Grid item>
                         <h2 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-center">How to Buy $POO</h2>
                     </Grid>
-                    <Grid item xs={12} container spacing={2} alignItems="center" justifyContent="center">
+                    <Grid item container spacing={2} alignItems="center" justifyContent="center">
                         <Grid item>
                             <Button href="https://dexscreener.com" target="_blank" rel="noopener noreferrer" variant="contained" sx={{ 
                                 backgroundColor: 'brown', 
@@ -63,6 +70,7 @@ const HowToBuy = () => {
                             />
                         </Grid>
                     </Grid>
+                    </div>
                 </Grid>
             </div>
         </section>

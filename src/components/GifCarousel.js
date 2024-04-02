@@ -42,13 +42,15 @@ const GifCarousel = () => {
   };
 
   return (
+    <div style={{ backgroundColor: '#F5A190'}}>
     <Slider {...settings}>
       {gifs.map((gif, index) => (
         <div key={index} style={{ userSelect: 'none', pointerEvents: 'none' }}>
-          <img src={gif} alt={`Pookie ${index + 1}`} style={{ width: "100%", height: "auto", opacity: 0.5 }} />
+          <img src={gif} alt={`Pookie ${index + 1}`} style={{ width: "100%", height: "auto", opacity: .6 }} />
         </div>
       ))}
     </Slider>
+    </div>
   );
 };
 

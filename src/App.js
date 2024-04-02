@@ -11,6 +11,7 @@ import About from './components/About';
 import HowToBuy from './components/HowToBuy';
 import Footer from './components/Footer';
 import Carousel from './components/GifCarousel'
+import background from "./assets/background.png"; // Ensure the path is correct
 // Import the CSS for the wallet adapter
 require('@solana/wallet-adapter-react-ui/styles.css');
 
@@ -30,11 +31,18 @@ function App() {
         <ConnectionProvider endpoint={endpoint}>
             <WalletProvider wallets={wallets} autoConnect>
                 <WalletModalProvider>
-                    <div className="font-sans bg-gradient-to-r from-pink-900 via-gray-800 to-yellow-900 min-h-screen">
+                <div className="font-sans min-h-screen"
+                        style={{
+                            backgroundColor: '#D291BC', // Example pastel color (Pastel Blue)
+                            backgroundSize: 'cover',
+                            backgroundPosition: 'center',
+                            backgroundRepeat: 'no-repeat',
+                        }}>
                         <Header />
                         <main>
                             <Hero />
-                            <About />
+                            <div style={{ borderTop: '0px solid #FFF', width: '100%', margin: '20px auto' }}></div>
+                            <div className="parallax"><About /></div>
                             <Carousel/>
                             <HowToBuy />
                         </main>

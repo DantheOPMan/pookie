@@ -12,9 +12,22 @@ html, body, #root {
 }
 
 .header-gradient {
-  background: linear-gradient(to bottom, #661e37 90%, rgba(102, 30, 55, 0) 100%);
+  background: linear-gradient(to bottom, #D291BC 100%, rgba(102, 30, 55, 0) 100%);
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+@media (max-width: 768px) {
+  .sidebar {
+    display: none; /* Example: Hide sidebar on small screens */
+  }
+}
+.parallax {
+  background-image: url('./assets/parralax.jpg');
+  min-height: 400px; /* Adjust based on your design */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
