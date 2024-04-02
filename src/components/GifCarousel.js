@@ -14,6 +14,7 @@ const gifs = importAll(require.context('../assets/', false, /^\.\/pookie.*\.gif$
 const GifCarousel = () => {
   const settings = {
     dots: false,
+    arrows: false, 
     infinite: true,
     speed: 3000,
     slidesToShow: 6, // Adjust based on how many GIFs you want visible at a time
@@ -24,7 +25,7 @@ const GifCarousel = () => {
     pauseOnHover: false,
     responsive: [
       {
-        breakpoint: 768, // Adjust breakpoints as needed
+        breakpoint: 480, // Adjust breakpoints as needed
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
