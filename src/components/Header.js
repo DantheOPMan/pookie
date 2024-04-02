@@ -25,7 +25,18 @@ const Header = () => {
                     <a href="https://t.me/yourtelegramhandle" target="_blank" rel="noopener noreferrer" className="mr-5 hover:text-gray-300">
                         <TelegramIcon />
                     </a>
-                    <WalletMultiButton />
+                    <WalletMultiButton style={{
+    backgroundColor: 'gray', // Your button's background color
+    color: 'white', // Your button's text color
+    fontWeight: 'bold', // Your button's font weight
+    fontSize: '0.875rem', // Your button's font size
+    borderRadius: '9999px', // Your button's border radius, for fully rounded corners
+    padding: '8px 16px', // Your button's padding
+    '&:hover': {
+        backgroundColor: 'darkgray', // Your button's hover state background color
+    },
+    // ... any other styles
+}} />
                 </nav>
             </div>
         </header>
