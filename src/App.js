@@ -33,7 +33,7 @@ function App() {
                 <WalletModalProvider>
                 <div className="font-sans min-h-screen"
                         style={{
-                            backgroundColor: '#D291BC', // Example pastel color (Pastel Blue)
+                            backgroundImage: `url(${background})`, // backgroundColor: '#D291BC'
                             backgroundSize: 'cover',
                             backgroundPosition: 'center',
                             backgroundRepeat: 'no-repeat',

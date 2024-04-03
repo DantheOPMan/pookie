@@ -12,7 +12,7 @@ html, body, #root {
 }
 
 .header-gradient {
-  background: linear-gradient(to bottom, #D291BC 100%, rgba(102, 30, 55, 0) 100%);
+  background: linear-gradient(to bottom, #81343D 100%, rgba(102, 30, 55, 0) 100%); /*#D291BC*/
   margin: 0;
   padding: 0;
   border: 0;
